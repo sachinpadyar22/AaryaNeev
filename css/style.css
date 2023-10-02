@@ -1,9 +1,4 @@
-/*!------------------------------------------------------------------
-[MAIN STYLESHEET]
 
-Template Name: Constra - Construction Html5 Template
-Description: Constra - Construction Html5 Template
--------------------------------------------------------------------*/
 /*------------------------------------------------------------------
 [TABLE OF CONTENTS]
 -------------------------------------------------------------------*/
@@ -2946,7 +2941,7 @@ img.testimonial-thumb {
 }
 
 .ts-team-content-classic .ts-name {
-  font-size: 16px;
+  font-size: 25px;
   margin-bottom: 5px;
   color: #212121;
 }
