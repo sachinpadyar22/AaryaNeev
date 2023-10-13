@@ -1952,6 +1952,17 @@ ul.navbar-nav>li.header-get-a-quote:hover>a:after {
   border-bottom: 3px solid #000;
 }
 
+@media (max-width: 770px){
+  .shuffle-btn-group {
+    /* display: inline-block;
+    margin: 20px 0 50px;
+    width: 100%;
+    border-bottom: 3px solid #000; */
+    display: flex;
+    flex-direction: column;
+}
+}
+
 .shuffle-btn-group label {
   display: inline-block;
   color: #212121;
