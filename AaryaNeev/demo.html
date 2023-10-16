@@ -1,0 +1,299 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        body {
+            height: 500px;
+            background-color: #dddddd;
+        }
+
+        .wrapper {
+            max-width: 700px;
+            margin: 50px auto;
+            padding: 20px 0;
+            background-color: #ecfff3;
+            width: 100%;
+            border-radius: 5px;
+            box-shadow: 3px 10px 15px -12px #333333, -3px 0px 15px -12px #333333;
+        }
+
+        .tab-content {
+            padding: 10px 20px;
+        }
+
+        .nav-tabs a {
+            border: 0 !important;
+            background-color: transparent !important;
+        }
+
+        .nav-tabs li.active {
+            border-bottom: 2px solid #5453d2;
+        }
+
+        .nav-tabs li {
+            border-bottom: 2px solid transparent;
+        }
+
+        .nav-tabs li a {
+            width: 100%;
+            text-align: center;
+        }
+
+        ul.nav.nav-tabs {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            overflow: hidden;
+        }
+
+        .nav-tabs li {
+            flex-basis: 90px;
+            min-width: 90px;
+            display: flex;
+            align-items: flex-start;
+            margin: 0 !important;
+        }
+
+        .tabs-wrapper {
+            position: relative;
+        }
+
+        span.left,
+        span.right {
+            position: absolute;
+            height: 30px;
+            width: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #5453D2;
+            border-radius: 50%;
+            left: -50px;
+            top: 8px;
+            cursor: pointer;
+            color: #ffffff;
+        }
+
+        span.right {
+            right: -50px;
+            left: unset;
+
+        }
+
+        .scroller-btn.inactive {
+            opacity: 0.3;
+            pointer-events: none;
+        }
+
+        section {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: #333;
+        }
+
+        section .box {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 10;
+        }
+
+        section .box.box1 {
+            background-color: #ffcc33;
+            clip-path: circle(200px at 0 0);
+        }
+
+        section .box.box2 {
+            background-color: #03a9f4;
+            clip-path: circle(150px at 100% 100%);
+        }
+
+        section h2 {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            text-align: center;
+            color: #fff;
+            font-size: 12em;
+        }
+
+        section .box.box1 h2 {
+            color: transparent;
+            -webkit-text-stroke: 3px #333;
+        }
+
+        section .box.box2 h2 {
+            color: transparent;
+            -webkit-text-stroke: 3px #333;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="tabs-wrapper">
+                <span class="left scroller-btn"></span>
+                <ul id="scroller" class="nav nav-tabs">
+                    <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+                    <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
+                    <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
+                    <li><a data-toggle="tab" href="#menu3">Menu 3</a></li>
+                    <li><a data-toggle="tab" href="#menu4">Menu 4</a></li>
+                    <li><a data-toggle="tab" href="#menu5">Menu 5</a></li>
+                    <li><a data-toggle="tab" href="#menu6">Menu 6</a></li>
+                    <li><a data-toggle="tab" href="#menu7">Menu 7</a></li>
+                    <li><a data-toggle="tab" href="#menu8">Menu 8</a></li>
+                    <li><a data-toggle="tab" href="#menu9">Menu 9</a></li>
+                    <li><a data-toggle="tab" href="#menu10">Menu 10</a></li>
+                </ul>
+                <span id="right" class="right scroller-btn">></span>
+            </div>
+            <div class="tab-content">
+                <div id="home" class="tab-pane fade in active">
+                    <h3>HOME</h3>
+                    <p>Some content.</p>
+                </div>
+                <div id="menu1" class="tab-pane fade">
+                    <h3>Menu 1</h3>
+                    <p>Some content in menu 1.</p>
+                </div>
+                <div id="menu2" class="tab-pane fade">
+                    <h3>Menu 2</h3>
+                    <p>Some content in menu 2.</p>
+                </div>
+                <div id="menu3" class="tab-pane fade">
+                    <h3>Menu 3</h3>
+                    <p>Some content in menu 3.</p>
+                </div>
+                <div id="menu4" class="tab-pane fade">
+                    <h3>Menu 4</h3>
+                    <p>Some content in menu 4.</p>
+                </div>
+                <div id="menu5" class="tab-pane fade">
+                    <h3>Menu 5</h3>
+                    <p>Some content in menu 5.</p>
+                </div>
+                <div id="menu6" class="tab-pane fade">
+                    <h3>Menu 6</h3>
+                    <p>Some content in menu 6.</p>
+                </div>
+                <div id="menu7" class="tab-pane fade">
+                    <h3>Menu 7</h3>
+                    <p>Some content in menu 7.</p>
+                </div>
+                <div id="menu8" class="tab-pane fade">
+                    <h3>Menu 8</h3>
+                    <p>Some content in menu 8.</p>
+                </div>
+                <div id="menu9" class="tab-pane fade">
+                    <h3>Menu 9</h3>
+                    <p>Some content in menu 9.</p>
+                </div>
+                <div id="menu10" class="tab-pane fade">
+                    <h3>Menu 10</h3>
+                    <p>Some content in menu 10.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section>
+        <div class="box box1">
+            <h2>Magic</h2>
+        </div>
+        <div class="box box2">
+            <h2>Magic</h2>
+        </div>
+        <h2>Magic</h2>
+    </section>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script>
+        const box1 = document.querySelector(".box1");
+
+        const box2 = document.querySelector(".box2");
+
+        // Depending on screen size how much the circles will grow?
+        const modifier = window.innerWidth / 520;
+
+        window.addEventListener("scroll", () => {
+            const scrollY = window.scrollY;
+            box1.style.clipPath = "circle(" + scrollY * modifier + "px at 0 0)";
+
+            box2.style.clipPath = "circle(" + scrollY * modifier + "px at 100% 100%)";
+        });
+
+        jQuery(document).ready(function ($) {
+            var tabwrapWidth = $('.tabs-wrapper').outerWidth();
+            var totalWidth = 0;
+            jQuery("ul li").each(function () {
+                totalWidth += jQuery(this).outerWidth();
+            });
+            if (totalWidth > tabwrapWidth) {
+                $('.scroller-btn').removeClass('inactive');
+            }
+            else {
+                $('.scroller-btn').addClass('inactive');
+            }
+
+            if ($("#scroller").scrollLeft() == 0) {
+                $('.scroller-btn.left').addClass('inactive');
+            }
+            else {
+                $('.scroller-btn.left').removeClass('inactive');
+            }
+            var liWidth = $('#scroller li').outerWidth();
+            var liCount = $('#scroller li').length;
+            var scrollWidth = liWidth * liCount;
+
+            $('.right').on('click', function () {
+                $('.nav-tabs').animate({ scrollLeft: '+=200px' }, 300);
+                console.log($("#scroller").scrollLeft() + " px");
+            });
+
+            $('.left').on('click', function () {
+                $('.nav-tabs').animate({ scrollLeft: '-=200px' }, 300);
+            });
+            scrollerHide()
+
+            function scrollerHide() {
+                var scrollLeftPrev = 0;
+                $('#scroller').scroll(function () {
+                    var $elem = $('#scroller');
+                    var newScrollLeft = $elem.scrollLeft(),
+                        width = $elem.outerWidth(),
+                        scrollWidth = $elem.get(0).scrollWidth;
+                    if (scrollWidth - newScrollLeft == width) {
+                        $('.right.scroller-btn').addClass('inactive');
+                    }
+                    else {
+
+                        $('.right.scroller-btn').removeClass('inactive');
+                    }
+                    if (newScrollLeft === 0) {
+                        $('.left.scroller-btn').addClass('inactive');
+                    }
+                    else {
+
+                        $('.left.scroller-btn').removeClass('inactive');
+                    }
+                    scrollLeftPrev = newScrollLeft;
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
