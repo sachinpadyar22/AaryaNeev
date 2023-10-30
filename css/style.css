@@ -2140,10 +2140,10 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
   color: #000;
   font-size: 10px;
   text-transform: uppercase;
-  border-radius: 15px;
+  /* border-radius: 15px; */
 }
 .shuffle-item .project-img-container .project-item-info-content .project-cat2 {
-  background: #d8d8d8;
+  background: #b7410e;
   display: inline-block;
   padding: 2px 8px;
   font-weight: 700;
@@ -2155,7 +2155,7 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
   .project-img-container
   .project-item-info-content
   .project-cat2:hover {
-  background: #b7410e;
+  background: #cb5320;
   display: inline-block;
   padding: 2px 8px;
   font-weight: 700;
@@ -3883,3 +3883,69 @@ label {
   margin-bottom: 50px;
   /* background-color: rgb(208, 208, 208); */
 }
+
+
+
+.project-img-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 50%;
+  left: 10px; /* Adjust left position as needed */
+  transform: translateY(-50%);
+  /* background: rgba(0, 0, 0, 0.7); Overlay background color */
+  color: white;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+  color: #fff;
+  z-index: 20;
+}
+
+
+.image-overlay h4{
+  color: white;
+}
+
+.image-overlay .year {
+  font-size: 15px;
+  color: #fff;
+  padding-top: 10px;
+}
+
+
+.typee{
+  background: #d8d8d8;
+  display: inline-block;
+  padding: 2px 6px;
+  font-weight: 700;
+  color: #000;
+  font-size: 10px;
+  text-transform: uppercase;
+  /* border-radius: 15px; */
+}
+
+.inq{
+  background: #d8d8d8;
+  display: inline-block;
+  padding: 2px 6px;
+  font-weight: 700;
+  color: #000;
+  font-size: 10px;
+  text-transform: uppercase;
+  /* border-radius: 15px; */
+  z-index: 10;
+}
+.inq:hover{
+  background: #b7410e;
+}
+
+
+.project-img-container:hover .image-overlay {
+  opacity: 1;
+  transform: translateY(-50%) scale(1.1); /* Adjust the scale factor for zoom-in effect */
+}
+

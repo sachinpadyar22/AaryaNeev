@@ -525,13 +525,83 @@
             <div class="row shuffle-wrapper">
 
 
-
               <div class="col-1 shuffle-sizer"></div>
+
               <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;residential&quot;, &quot;Ongoing&quot;]">
+                <a href="./projects-single.html?content=link20">
+                  <div class="project-img-container" style="position: relative;">
+                    <div>
+                      <div class="image-overlay ml-3 mt-4">
+                        <h4>AARYAVAN</h4>
+                        <p class="year">
+                          2023 & ongoing
+                        </p>
+                        <p> 
+                          <div class="Row ">
+                            <div class="typee">Residential</div>
+                            <div class="inq">Inquire Now</div>
+                          </div>
+                        </p>
+                      </div>
+                    </div>
+                    
+                    <img class="img-fluid" src="images/projects/AARYAVAN Garden.jpg" alt="project-img">
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;residential&quot;, &quot;Ongoing&quot;]">
+                <a href="projects-single.html?content=link1">
+                  <div class="project-img-container" style="position: relative;">
+                    <div>
+                      <div class="image-overlay ml-3 mt-4">
+                        <h4>VIBGYOR - 4BHK</h4>
+                        <p class="year">
+                          Prahlad nagar - 2023 & ongoing
+                        </p>
+                        <p> 
+                          <div class="Row ">
+                            <div class="typee">Residential</div>
+                            <div class="inq">Inquire Now</div>
+                          </div>
+                        </p>
+                      </div>
+                    </div>
+                    
+                    <img class="img-fluid" src="images/projects/Harshilbhai_View_02.jpg" alt="project-img">
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;residential&quot;, &quot;Ongoing&quot;]">
+                <a href="projects-single.html?content=link2">
+                  <div class="project-img-container" style="position: relative;">
+                    <div>
+                      <div class="image-overlay ml-3 mt-4">
+                        <h4>Aaryabhumi</h4>
+                        <p class="year">
+                          Jodhpur Cross Rd. - 2018
+                        </p>
+                        <p> 
+                          <div class="Row ">
+                            <div class="typee">Residential, Commercial</div>
+                            <div class="inq">Inquire Now</div>
+                          </div>
+                        </p>
+                      </div>
+                    </div>
+                    
+                    <img class="img-fluid" src="images/projects/Aaryabhumi (1).JPG" alt="project-img">
+                  </div>
+                </a>
+              </div>
+              
+               
+              <!-- <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;residential&quot;, &quot;Ongoing&quot;]">
                 <div class="project-img-container">
                   <a class="gallery-popup" href="images/projects/AARYAVAN Garden.jpg" aria-label="project-img">
                     <img class="img-fluid" src="images/projects/AARYAVAN Garden.jpg" alt="project-img">
-                    <!-- <video src="./videos/Aaryavan.mp4" autoplay></video> -->
+                    <video src="./videos/Aaryavan.mp4" autoplay></video>
                  
                   </a>
                   <div class="project-item-info">
@@ -563,7 +633,7 @@
                   <div class="project-item-info">
                     <div class="project-item-info-content">
                       <h3 class="project-item-title">
-                        <a href="projects-single.html?content=link1">VIBGYOR - 4BHK luxury residence</a>
+                        <a href="projects-single.html?content=link1">VIBGYOR - 4BHK</a>
                       </h3>
                       <p class="project-item-title2">
                         Prahlad nagar - 2023 & ongoing
@@ -599,7 +669,8 @@
                     </div>
                   </div>
                 </div>
-              </div><!-- shuffle item 12 end -->
+              </div> -->
+              <!-- shuffle item 12 end -->
 
               <!-- <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;residential&quot;,&quot;Completed&quot;]">
                 <div class="project-img-container">
@@ -1067,6 +1138,23 @@
 
     <!-- Javascript Files
   ================================================== -->
+
+  <script>
+    const imageContainers = document.querySelectorAll('.project-img-container');
+  
+    imageContainers.forEach((container) => {
+      // container.addEventListener('mouseover', () => {
+      //   container.style.transition = 'transform 0.3s';
+      //   container.style.transform = 'scale(1.1)'; // Adjust the scale factor for zoom-in effect
+      // });
+  
+      container.addEventListener('mouseout', () => {
+        container.style.transition = 'transform 0.3s';
+        container.style.transform = 'scale(1)';
+      });
+    });
+  </script>
+  
 
    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="script.js"></script>
