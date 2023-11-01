@@ -3951,3 +3951,6 @@ label {
   transform: translateY(-50%) scale(1.1); /* Adjust the scale factor for zoom-in effect */
 }
 
+.progress-bar{
+  background-color: #b7410e;
+}
