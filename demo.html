@@ -33,15 +33,25 @@
     <link rel="stylesheet" href="plugins/colorbox/colorbox.css">
     <!-- Template styles-->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"> -->
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
 
 
     <style>
         .breadcrumb {
             background-color: transparent;
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            height: 46px;
+            width: 99px;
+            border: none;
+            background: transparent;
+            position: absolute;
+            top: 50%;
         }
     </style>
 
@@ -98,15 +108,15 @@
                                         </li>
 
                                         <li class="nav-item dropdown">
-                                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Projects <i
-                                                class="fa fa-angle-down"></i></a>
+                                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Projects
+                                                <i class="fa fa-angle-down"></i></a>
                                             <ul class="dropdown-menu" role="menu">
-                                              <!-- <li><a href="#">All Projects</a></li> -->
-                                              <li><a href="residential.html">Residential</a></li>
-                                              <li><a href="commercial.html">Commercial</a></li>
+                                                <!-- <li><a href="#">All Projects</a></li> -->
+                                                <li><a href="residential.html">Residential</a></li>
+                                                <li><a href="commercial.html">Commercial</a></li>
                                             </ul>
                                         </li>
-                                          <!-- <li class="nav-item">
+                                        <!-- <li class="nav-item">
                                             <a href="projects.html" class="nav-link">Projects</a>
 
                                         </li> -->
@@ -190,14 +200,15 @@
                     <div class="container">
 
                         <div class="row ">
-                            <img width="100%" src="./images/vibgyorImages/VIBGYOR brochure 06 (1)_page-0004.jpg" alt="image">
-                                <!-- <video src="./videos/Vibgyor.mp4" width="100%" autoplay muted controls></video> -->
+                            <img width="100%" src="./images/vibgyorImages/VIBGYOR brochure 06 (1)_page-0004.jpg"
+                                alt="image">
+                            <!-- <video src="./videos/Vibgyor.mp4" width="100%" autoplay muted controls></video> -->
                         </div>
-                        
+
                         <div class="row mt-5">
                             <div class="col-lg-4 col-md-12">
                                 <h1>VIBGYOR</h1>
-                                <button class="btn btn-dark m-2" >Enquire Now</button>
+                                <button class="btn btn-dark m-2">Enquire Now</button>
                                 <button class="btn btn-dark m-2">Download Brochure</button>
                             </div>
                             <div class="col-lg-8 col-md-12">
@@ -254,12 +265,12 @@
                                     <button class="carousel-control-prev" type="button"
                                         data-bs-target="#carouselExampleFade" data-bs-slide="prev">
                                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Previous</span>
+                                        <span class="visually-hidden"></span>
                                     </button>
                                     <button class="carousel-control-next" type="button"
                                         data-bs-target="#carouselExampleFade" data-bs-slide="next">
                                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Next</span>
+                                        <span class="visually-hidden"></span>
                                     </button>
                                 </div>
                             </div>
@@ -277,38 +288,46 @@
                         <div class="row">
                             <div class="col ">
                                 <h2><i class="bi bi-images"></i> Gallery</h2>
-                                <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                                <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade"
+                                    data-bs-ride="carousel">
                                     <div class="carousel-inner">
-                                     
-                                      <div class="carousel-item active">
-                                        <img src="./images/vibgyorImages/img/Harshilbhai_View_07.jpg" class="d-block w-100" alt="...">
-                                      </div>
-                                      <div class="carousel-item">
-                                        <img src="./images/vibgyorImages/img/Harshilbhai_View_11_Balcony_01.jpg" class="d-block w-100" alt="...">
-                                      </div>
-                                      <div class="carousel-item">
-                                        <img src="./images/vibgyorImages/img/Living_Dining.jpg" class="d-block w-100" alt="...">
-                                      </div>
-                                      <div class="carousel-item">
-                                        <img src="./images/vibgyorImages/img/Mr. Harshit Bhai Game Room Cam 01.jpg" class="d-block w-100" alt="...">
-                                      </div>
-                                      <div class="carousel-item">
-                                        <img src="./images/vibgyorImages/img/Mr. Harshit Bhai Game Room Cam 02.jpg" class="d-block w-100" alt="...">
-                                      </div>
-                                      
+
+                                        <div class="carousel-item active">
+                                            <img src="./images/vibgyorImages/img/Harshilbhai_View_07.jpg"
+                                                class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./images/vibgyorImages/img/Harshilbhai_View_11_Balcony_01.jpg"
+                                                class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./images/vibgyorImages/img/Living_Dining.jpg"
+                                                class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./images/vibgyorImages/img/Mr. Harshit Bhai Game Room Cam 01.jpg"
+                                                class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./images/vibgyorImages/img/Mr. Harshit Bhai Game Room Cam 02.jpg"
+                                                class="d-block w-100" alt="...">
+                                        </div>
+
                                     </div>
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                      <span class="visually-hidden">Previous</span>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden"></span>
                                     </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                      <span class="visually-hidden">Next</span>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden"></span>
                                     </button>
-                                  </div>
+                                </div>
                             </div>
                         </div>
-                        
+
 
 
                     </div>
@@ -318,14 +337,14 @@
 
 
             </div><!-- Conatiner end -->
-            
+
         </section><!-- Main container end -->
-        
+
 
         <footer id="footer" class="footer bg-overlay">
             <div class="footer-main">
                 <div class="container">
-                    
+
                     <div class="row justify-content-between">
                         <div class="col-lg-4 col-md-6 footer-widget footer-about">
                             <h3 class="widget-title">About Us</h3>
@@ -414,9 +433,9 @@
         <!-- Javascript Files
   ================================================== -->
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
