@@ -3954,3 +3954,27 @@ label {
 .progress-bar{
   background-color: #b7410e;
 }
+
+.inquiry{
+  color: #000;
+  /* border: 1px solid #555555; */
+  /* padding: 8px; */
+  /* border-radius: 5px; */
+  font-weight: 700;
+  font-size: 12px
+}
+.inquiry:hover{
+  color: #b7410e;
+  border-bottom: 1px solid #b7410e;
+  padding-bottom: 4px;
+  /* border: 1px solid #b7410e; */
+  /* background-color: #b7410e; */
+}
+
+.projectCard .card-img-top{
+  height: 350px;
+}
+
+.projectCard h3{
+  font-size: 21px;
+}

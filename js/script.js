@@ -187,6 +187,7 @@ jQuery(function ($) {
       });
     }
     pageSlider();
+    
 
     // Shuffle js filter and masonry
     function projectShuffle() {
